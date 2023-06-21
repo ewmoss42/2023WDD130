@@ -183,6 +183,25 @@ nav a:hover {
     align-self: center;
 }
 
+#rivers_head {
+
+}
+#Idaho_Main {
+
+}
+#Idaho_Head, #Utah_Head, #Arizona_Head, #FAQ_Head, #Blog_Head, #Rates_Head {
+
+}
+#Idaho_Body, #Utah_Body, #Arizona_Body {
+
+}
+#Utah_Main {}
+ {}
+#Arizona_Main {}
+{}
+ {}
+#Extra {}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
