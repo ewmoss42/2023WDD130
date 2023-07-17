@@ -6,103 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <style>
-        form {
-            margin: 0 auto;
-            width: 400px;
-            padding: 1em;
-            border: 1px solid #CCC;
-            border-radius: 1em;
-        }
-        
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        form li+li {
-            margin-top: 1em;
-        }
-        
-        label {
-            display: inline-block;
-            width: 90px;
-            text-align: right;
-        }
-        
-        input,
-        textarea {
-            font: 1em sans-serif;
-            width: 300px;
-            box-sizing: border-box;
-            border: 1px solid #999;
-        }
-        
-        input:focus,
-        textarea:focus {
-            border-color: #000;
-        }
-        
-        textarea {
-            vertical-align: top;
-            height: 5em;
-        }
-        
-        .button {
-            padding-left: 90px;
-        }
-        
-        button {
-            margin-left: .5em;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/contactus.css">
 </head>
 
 <body>
-    <main>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+    </div>
 
-        <div id="feedback"></div>
+    <div>
 
-        <form action="/my-handling-form-page" method="post">
+        <img id="d" src="images/contact.jpg" alt="sky">
+        <h1 id="c">CONTACT US</h1>
 
-            <ul>
-                <li>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name">
-                </li>
-                <li>
-                    <label for="mail">E-Mail:</label>
-                    <input type="email" id="mail" name="user_mail">
-                </li>
-                <li>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Send your message</button>
-                </li>
-            </ul>
+    </div>
+
+    <div class="container">
+
+        <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+             <option value="australia">Australia</option>
+             <option value="canada">Canada</option>
+             <option value="usa">USA</option>
+             <option value="usa">Peru</option>
+             <option value="usa">Argentina</option>
+             <option value="usa">Brasil</option>
+             <option value="usa">Chile</option>
+             <option value="usa">Japan</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px">
+            </textarea>
+            <input type="submit" value="Submit">
         </form>
-    </main>
-    <script>
-        // get the feedback div element so we can do something with it.
-        const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
-        });
-    </script>
+
+    </div>
+    <article class="all-browsers">
+        <h2 id="f">APU SIQAY - the place where everyone can enjoy</h2>
+        <article class="browser">
+            <h3 id="j">Contact us</h3>
+            <p id="g">Our workers will give you good information about the events we have and the prices you need to know, if you have any suggestions or complaints report it to our email that is below in the footer.</p>
+        </article>
+    </article>
+    <footer>
+        <p>Our e-mail<br>
+            <a href="mailto:apusiqay@gmail.com">apusiqay@gmail.com</a></p>
+    </footer>
 </body>
 
 </html>
