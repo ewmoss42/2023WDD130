@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Shalimar&family=Splash&display=swap");
+@import url("");
 body {
     margin: 0;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 #f {
-    font-family: Splash;
+    font-family: Rock Salt;
 }
 
 #c {
@@ -64,7 +64,7 @@ body {
 footer {
     text-align: center;
     padding: 3px;
-    background-color: DarkSalmon;
+    background-color: #b40601;
     color: white;
 }
 
